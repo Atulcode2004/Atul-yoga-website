@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power Yoga | Yoga Bliss</title>
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --primary-dark: #2E7D32;
+      --text-color: #2C2C2C;
+      --bg-light: #F4F7F6;
+      --bg-white: #FFFFFF;
+      --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --section-padding: 80px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    header {
+      background: url('./img/power-yoga-bg.jpg') no-repeat center center/cover;
+      height: 65vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .header-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 221, 92, 0.6);
+      backdrop-filter: blur(3px);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+    .header-content h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .header-content p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    section {
+      padding: var(--section-padding) 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .content-wrapper {
+      background: var(--bg-white);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: var(--box-shadow);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: var(--primary-dark);
+      border-left: 6px solid var(--primary);
+      padding-left: 15px;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .blog-img {
+      width: 60%;
+      height: auto;
+      border-radius: 16px;
+      margin: 30px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-img:hover {
+      transform: scale(1.03);
+    }
+     .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+    footer {
+      background-color: #1E1E1E;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .header-content h1 {
+        font-size: 2.4rem;
+      }
+      .header-content p {
+        font-size: 1.1rem;
+      }
+      .content-wrapper {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-overlay"></div>
+  <div class="header-content">
+    <h1>Power Yoga</h1>
+    <p>Build Strength, Flexibility, and Endurance</p>
+  </div>
+</header>
+
+<!-- Blog Content -->
+<section>
+  <div class="container">
+    <div class="content-wrapper">
+      <h2 class="section-title">What is Power Yoga?</h2>
+      <p>Power Yoga is a vigorous form of yoga that combines strength, flexibility, and endurance. It’s designed to build muscle while improving overall cardiovascular health. This dynamic style of yoga is typically performed in a faster-paced flow with a focus on breath and movement synchronization.</p>
+
+      <img src="https://imayamyoga.com/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-5.03.55-PM.jpeg" class="blog-img" alt="Power Yoga Image">
+
+      <h2 class="section-title">Benefits of Power Yoga</h2>
+      <ul>
+        <li>Builds strength and flexibility</li>
+        <li>Improves endurance and stamina</li>
+        <li>Enhances mental clarity and focus</li>
+        <li>Promotes weight loss and toning</li>
+        <li>Boosts cardiovascular health</li>
+      </ul>
+
+      <h2 class="section-title">Power Yoga Techniques</h2>
+      <p>Power Yoga consists of various asanas (poses) done in a faster flow to increase heart rate and develop strength. Some key poses include:</p>
+      <ul>
+        <li>Sun Salutations (Surya Namaskar)</li>
+        <li>Warrior Poses (Virabhadrasana I, II, and III)</li>
+        <li>Plank Pose (Phalakasana)</li>
+        <li>Cobra Pose (Bhujangasana)</li>
+        <li>Chaturanga Dandasana (Four-Limbed Staff Pose)</li>
+      </ul>
+
+      <h2 class="section-title">Who Should Practice Power Yoga?</h2>
+      <p>Power Yoga is best suited for those looking to challenge themselves physically. It’s ideal for individuals with an active lifestyle or those who want to build strength and stamina. It can be intense, so it’s important to have a basic understanding of yoga before diving into Power Yoga.</p>
+
+      <h2 class="section-title">Watch a Power Yoga Session</h2>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U1cHGJYIwhA?si=p_7GPWnDh0m1itcN&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Yoga Bliss. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

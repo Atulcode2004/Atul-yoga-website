@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Classes - Yoga Bliss</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 70px;
+      background-color: #7F55B1;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .card-custom {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background: #9C77D1;
+      color: white;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-header {
+      background-color: #5E3990;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .card-body {
+      padding: 2rem;
+    }
+
+    .card-body img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .details {
+      font-size: 1rem;
+      color: #eee;
+      margin-bottom: 1rem;
+    }
+
+    .btn-success {
+      font-weight: 600;
+      padding: 12px;
+      border-radius: 25px;
+      width: 100%;
+      background-color: #c7135e;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-success:hover {
+      background-color: #0e7d79;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .cta-text {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: 500;
+      background-color: #6A42A0;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .info-section, .testimonials-section {
+      margin-top: 60px;
+      padding: 40px;
+      background-color: #6a42a0;
+      color: #fff;
+      border-radius: 12px;
+    }
+
+    .testimonial {
+      background-color: #8c6dbf;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .card-custom {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./img/yoga logo photo.png" alt="logo" style="height: 4rem;"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="classes.html">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Course Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Our Offerings</h2>
+    <div class="row g-4 justify-content-center align-items-stretch">
+
+      <!-- Free Yoga Course -->
+      <div class="col-md-6 d-flex">
+        <div class="card card-custom text-center h-100 w-100">
+          <div class="card-header">Free Yoga Course</div>
+          <div class="card-body d-flex flex-column">
+            <img src="https://img.freepik.com/free-vector/artistic-yoga-day-posture-banner-healthy-lifestyle_1017-44487.jpg?uid=R168146634&ga=GA1.1.730881237.1747035429&semt=ais_hybrid&w=740" />
+            <p class="details">Join our free online yoga course designed for beginners. Learn basic postures, breathing techniques, and mindfulness practices from certified instructors.</p>
+            <ul class="list-unstyled">
+              <li>✔️ Live Online Sessions</li>
+              <li>✔️ Beginner Friendly</li>
+              <li>✔️ No Equipment Needed</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="yogacourse.html" class="btn btn-success mt-3">Join Free Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personalized Diet Plan -->
+      <div class="col-md-6 d-flex">
+        <div class="card card-custom text-center h-100 w-100">
+          <div class="card-header">Personalized Diet Plan</div>
+          <div class="card-body d-flex flex-column">
+            <img src="https://img.freepik.com/premium-photo/weekly-diet-plan-concept-proper-nutrition-selective-focus_73944-13167.jpg?ga=GA1.1.320360955.1747119406&semt=ais_hybrid&w=740" />
+            <p class="details">Get a customized diet plan based on your health goals. Includes calorie tracking, meal suggestions, and regular consultations with our certified nutritionist.</p>
+            <ul class="list-unstyled">
+              <li>✔️ Tailored for Your Body Type</li>
+              <li>✔️ Vegetarian & Vegan Options</li>
+              <li>✔️ Weekly Meal Schedule</li>
+              <li>✔️ WhatsApp Support</li>
+            </ul>
+            <div class="mt-auto">
+              <a href="dietplan.html" class="btn btn-success mt-3">Get Diet Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-text mt-5">
+      <p>Whether you're stepping into yoga or aiming to eat healthier, we’re here to support you every step of the way. Sign up today and take control of your mind, body, and health with Yoga Bliss!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="info-section container">
+  <h2 class="section-title">Why Choose Yoga Bliss?</h2>
+  <p>At Yoga Bliss, we blend tradition with technology to help you start your wellness journey from the comfort of your home. Our experienced instructors, flexible schedules, and supportive community ensure that every learner feels guided and empowered. Whether you're a beginner or a seasoned practitioner, our offerings are tailored to meet your personal goals.</p>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section container">
+  <h2 class="section-title">What Members Are Saying</h2>
+  <div class="row g-4">
+
+    <!-- Member 1 -->
+    <div class="col-md-4">
+      <div class="card bg-light text-dark h-100">
+        <div class="card-body text-center">
+          <img src="https://img.freepik.com/premium-photo/cheerful-young-woman-yellow-shirt-stands-with-arms-crossed-against-gray-backdrop-radiating-confidence-optimism_95891-86101.jpg?uid=R168146634&ga=GA1.1.730881237.1747035429&semt=ais_hybrid&w=740" alt="Priya Sharma" class="rounded-circle mb-3" width="100" height="100">
+          <h5 class="card-title">Priya Sharma</h5>
+          <p class="card-text">"Yoga Bliss helped me relieve stress and regain energy after work. The instructors are so friendly and the sessions are super relaxing!"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="col-md-4">
+      <div class="card bg-light text-dark h-100">
+        <div class="card-body text-center">
+          <img src="https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129416.jpg?uid=R168146634&ga=GA1.1.730881237.1747035429&semt=ais_hybrid&w=740" alt="Rahul Mehra" class="rounded-circle mb-3" width="100" height="100">
+          <h5 class="card-title">Rahul Mehra</h5>
+          <p class="card-text">"I loved the personalized diet plan! It was simple to follow and gave me real results within weeks. Highly recommended."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="col-md-4">
+      <div class="card bg-light text-dark h-100">
+        <div class="card-body text-center">
+          <img src="https://img.freepik.com/free-photo/attractive-stylish-young-woman-with-tattoo-practicing-morning-yoga-home-sitting-floor-bedroom-doing-ardha-matsyendrasana_343059-940.jpg?uid=R168146634&ga=GA1.1.730881237.1747035429&semt=ais_hybrid&w=740" alt="Neha Kapoor" class="rounded-circle mb-3" width="100" height="100">
+          <h5 class="card-title">Neha Kapoor</h5>
+          <p class="card-text">"Joining the free yoga course was the best decision. It gave me a strong foundation and built my confidence to pursue advanced practice."</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Yoga Bliss. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

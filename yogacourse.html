@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Yoga Course | Yoga Bliss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+
+ <style>
+  :root {
+    --primary: #70c1b3;
+    --secondary: #f6fff8;
+    --accent: #b2f7ef;
+    --text-dark: #222;
+    --text-light: #444;
+    --bg-main: #f0f4f8;
+    --gradient-header: linear-gradient(to right, #84fab0, #8fd3f4);
+    --box-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+    --radius-lg: 20px;
+    --transition: all 0.3s ease;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.75;
+    font-size: 16px;
+  }
+
+  header {
+  height: 75vh;
+  background: radial-gradient(circle at top left, #dca8e4, #ee0ab5, #a797aa);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 70%);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.header-content {
+  z-index: 2;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeInUp 1.6s ease forwards;
+  opacity: 0;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #e6ffe6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #f0f9ff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Simple fade-up animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--box-shadow-lg);
+    border-radius: var(--radius-lg);
+    padding: 60px;
+    margin-top: -60px;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .class-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+
+  .class-description {
+    flex: 1 1 50%;
+    color: var(--text-light);
+    font-size: 1.1rem;
+  }
+
+  .class-info img {
+    flex: 1 1 15%;
+    width: 30%;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    box-shadow: var(--box-shadow-md);
+    transition: transform 0.3s ease;
+  }
+
+  .class-info img:hover {
+    transform: scale(1.03);
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 22px;
+  }
+
+  ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow-md);
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  th, td {
+    padding: 18px 24px;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--text-dark);
+  }
+
+  thead {
+    background: var(--primary);
+    color: white;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f8fdfb;
+  }
+
+  tbody tr:hover {
+    background-color: #e9fff5;
+  }
+
+  footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 30px 20px;
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+    margin-top: 100px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 2.4rem;
+    }
+
+    .header-content p {
+      font-size: 1.1rem;
+    }
+
+    .content-wrapper {
+      padding: 40px 20px;
+    }
+
+    .class-info {
+      flex-direction: column;
+    }
+
+    .class-description,
+    .class-info img {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  
+  <div class="header-overlay" >
+  </div>
+  <div class="header-content">
+    <h1>Free Yoga Course</h1>
+    <p>Transform Your Life with Weekly Yoga Classes</p>
+  </div>
+</header>
+
+<!-- Course Content -->
+<section>
+  <div class="container">
+    <div class="content-wrapper">
+      <h2 class="section-title">Welcome to the Free Yoga Course</h2>
+      <p>Embark on a journey of wellness with our free weekly yoga classes. Whether you're a beginner or an experienced practitioner, each class is designed to improve your physical, mental, and emotional well-being. Follow the schedule below for a holistic yoga experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Enhanced Weekly Schedule Table -->
+<div style="overflow-x:auto; margin-top: 40px;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 1rem; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); background-color: #fff;">
+    <thead style="background: linear-gradient(135deg, #841180, #f02cd6); color: white;">
+      <tr>
+        <th style="padding: 16px 12px; text-align: left;">Day</th>
+        <th style="padding: 16px 12px; text-align: left;">Class</th>
+        <th style="padding: 16px 12px; text-align: left;">Time</th>
+        <th style="padding: 16px 12px; text-align: left;">Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Monday</td>
+        <td style="padding: 14px 12px;">Beginner Yoga Flow</td>
+        <td style="padding: 14px 12px;">7:00 AM</td>
+        <td style="padding: 14px 12px;">60 mins</td>
+      </tr>
+      <tr style="background-color: #f9f9f9; border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Tuesday</td>
+        <td style="padding: 14px 12px;">Breathwork & Meditation</td>
+        <td style="padding: 14px 12px;">6:30 PM</td>
+        <td style="padding: 14px 12px;">45 mins</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Wednesday</td>
+        <td style="padding: 14px 12px;">Vinyasa Flow</td>
+        <td style="padding: 14px 12px;">7:00 AM</td>
+        <td style="padding: 14px 12px;">60 mins</td>
+      </tr>
+      <tr style="background-color: #f9f9f9; border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Thursday</td>
+        <td style="padding: 14px 12px;">Strength & Flexibility</td>
+        <td style="padding: 14px 12px;">6:30 PM</td>
+        <td style="padding: 14px 12px;">60 mins</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Friday</td>
+        <td style="padding: 14px 12px;">Restorative Yoga</td>
+        <td style="padding: 14px 12px;">7:00 AM</td>
+        <td style="padding: 14px 12px;">60 mins</td>
+      </tr>
+      <tr style="background-color: #f9f9f9; border-bottom: 1px solid #eee;">
+        <td style="padding: 14px 12px;">Saturday</td>
+        <td style="padding: 14px 12px;">Power Yoga</td>
+        <td style="padding: 14px 12px;">8:00 AM</td>
+        <td style="padding: 14px 12px;">60 mins</td>
+      </tr>
+      <tr>
+        <td style="padding: 14px 12px;">Sunday</td>
+        <td style="padding: 14px 12px;">Yoga for Stress Relief</td>
+        <td style="padding: 14px 12px;">6:00 PM</td>
+        <td style="padding: 14px 12px;">45 mins</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- Weekly Schedule -->
+<section>
+  <div class="container">
+    <div class="content-wrapper">
+      <h2 class="section-title">Weekly Yoga Class Schedule</h2>
+      <p>Our free yoga course includes daily classes focused on different aspects of yoga, from strength-building to relaxation and mindfulness.</p>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Monday: Beginner Yoga Flow</h3>
+          <p>Start your week by learning the basics of yoga, focusing on fundamental postures and breathwork. This class is perfect for beginners looking to build a strong foundation.</p>
+          <ul>
+            <li>7:00 AM - 60 mins</li>
+            <li>Gentle stretches, basic asanas, and breath awareness</li>
+            <li>Focus on alignment and mindfulness</li>
+          </ul>
+        </div>
+        <img src="https://i.pinimg.com/1200x/87/95/e9/8795e9ad2bd4ceee0014e8a793017fcf.jpg" alt="Beginner Yoga" >
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Tuesday: Breathwork & Meditation</h3>
+          <p>Enhance your mental clarity and calm your mind with guided breathwork and meditation. This class is designed to reduce stress and boost mental focus.</p>
+          <ul>
+            <li>6:30 PM - 45 mins</li>
+            <li>Breathing techniques like Nadi Shodhana</li>
+            <li>Guided meditation for relaxation</li>
+          </ul>
+        </div>
+        <img src="https://i.pinimg.com/564x/48/47/c0/4847c05bbc51aeec05af5600ffddaf4b.jpg" alt="Breathwork & Meditation">
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Wednesday: Vinyasa Flow</h3>
+          <p>Flow through dynamic movements in this energizing class, building strength and flexibility while syncing breath with motion.</p>
+          <ul>
+            <li>7:00 AM - 60 mins</li>
+            <li>Sun Salutations and standing poses</li>
+            <li>Increase flexibility, build endurance</li>
+          </ul>
+        </div>
+        <img src="https://femina.wwmindia.com/content/2022/feb/benefits-of-vinyasa-yoga-infographic.jpg" alt="Vinyasa Yoga">
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Thursday: Strength & Flexibility</h3>
+          <p>This class focuses on building both strength and flexibility, using a mix of yoga poses to challenge your muscles while increasing your range of motion.</p>
+          <ul>
+            <li>6:30 PM - 60 mins</li>
+            <li>Strength-building poses like Plank, Warrior</li>
+            <li>Deep flexibility stretches</li>
+          </ul>
+        </div>
+        <img src="https://www.yogaandmoreschool.com/cdn/shop/articles/Strength_and_Flexibility_Sequence_Yoga_And_More_School_1080x.png?v=1711352439" alt="Strength & Flexibility Yoga">
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Friday: Restorative Yoga</h3>
+          <p>End your week with deep relaxation, holding passive poses for longer periods. This restorative class promotes healing and rejuvenation.</p>
+          <ul>
+            <li>7:00 AM - 60 mins</li>
+            <li>Restorative poses using props for support</li>
+            <li>Deep breathing to activate the parasympathetic nervous system</li>
+          </ul>
+        </div>
+        <img src="https://i.pinimg.com/564x/6a/ec/89/6aec8900a310e40453e40c81d207d55f.jpg" alt="Restorative Yoga">
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Saturday: Power Yoga</h3>
+          <p>Build strength, flexibility, and endurance with this high-energy, fast-paced yoga class designed to challenge your physical limits.</p>
+          <ul>
+            <li>8:00 AM - 60 mins</li>
+            <li>Intense poses to build strength and stamina</li>
+            <li>Cardio-focused movements</li>
+          </ul>
+        </div>
+        <img src="https://3.imimg.com/data3/CR/AA/MY-10870210/power-yoga-classes-for-weight-loss.jpg" alt="Power Yoga">
+      </div>
+
+      <div class="class-info">
+        <div class="class-description">
+          <h3>Sunday: Yoga for Stress Relief</h3>
+          <p>End your week with a calming and restorative class designed to release stress and tension. Perfect for preparing for the week ahead.</p>
+          <ul>
+            <li>6:00 PM - 45 mins</li>
+            <li>Gentle stretches, relaxation poses</li>
+            <li>Guided meditation to reduce stress</li>
+          </ul>
+        </div>
+        <img src="https://i.pinimg.com/736x/67/1e/a1/671ea1e51244692988c0e3e77e48d9d0.jpg" alt="Yoga for Stress Relief">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Yoga Bliss. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
